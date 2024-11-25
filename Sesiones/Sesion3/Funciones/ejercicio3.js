@@ -9,6 +9,9 @@ e) Función que reciba un array de números y devuelva un nuevo array con solo l
 
 */
 
-function numeroMayor(){
-    let
+function arraMayor(array, valor){
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        result.push(array[i]);
+    }
 }
