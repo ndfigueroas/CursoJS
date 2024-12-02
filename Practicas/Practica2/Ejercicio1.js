@@ -7,20 +7,23 @@ Llama a la función sumaArray pasando el array numeros y muestra el resultado
 en la consola.*/
 
 
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
-for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i]);
+for (let i = 0; i < numero.length; i++) {
+    console.log(numero[i]);
+
 }
 
 function sumaArray(array) {
     let suma = 0;
+
     for (let i = 0; i < array.length; i++) {
         suma += array[i];
     }
-    return suma;
+    return suma
 }
 
-let resultado = sumaArray(numeros);
-console.log("La suma de los elementos del array es: " + resultado);
+
+let resultado = sumaArray(numero);
+console.log(resultado);

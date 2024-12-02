@@ -12,7 +12,7 @@ function buscarFruta(fruta, array) {
     return array.includes(fruta);
 }
 
-console.log(buscarFruta("manzana", frutas)); // true
-console.log(buscarFruta("kiwi", frutas));    // false
-console.log(buscarFruta("pera", frutas));    // true
-console.log(buscarFruta("mango", frutas));   // false
+console.log(buscarFruta("manzana", frutas)); 
+console.log(buscarFruta("kiwi", frutas));    
+console.log(buscarFruta("pera", frutas));    
+console.log(buscarFruta("mango", frutas));   

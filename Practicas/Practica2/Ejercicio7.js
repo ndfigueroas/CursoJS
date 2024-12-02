@@ -1,3 +1,5 @@
+console.log("resolviendo practica 2, pregunta 7");
+
 /*Ejercicio 7: Filtrar Elementos
 Crea un array llamado palabras que contenga varias palabras.
 Crea una función llamada filtrarPalabras que reciba un array y un número, y
@@ -5,17 +7,18 @@ devuelva un nuevo array con las palabras que tengan más letras que el número
 especificado.
 Prueba la función filtrarPalabras y muestra el resultado en la consola.*/
 
-let palabras = ["manzana", "banana", "naranja", "pera", "uva", "kiwi", "sandía", "melón", "fresa", "cereza"];
+let palabras = ["perro", "gato", "gallina", "caballo", "mono", "asno", "buey", "jirafa", "elefante", "camello"];
+
 
 function filtrarPalabras(array, numero) {
-    let palabrasFiltradas = [];
+    let newArray = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i].length > numero) {
-            palabrasFiltradas.push(array[i]);
+            newArray.push(array[i]);
         }
     }
-    return palabrasFiltradas;
+    return newArray;
 }
-
-let resultado = filtrarPalabras(palabras, 5);
-console.log("Las palabras con más de 5 letras son: " + resultado);
+let numero = 7;
+let resultado = filtrarPalabras(palabras, numero);
+console.log(resultado);
