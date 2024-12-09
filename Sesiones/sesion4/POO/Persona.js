@@ -4,10 +4,12 @@ class Persona {
         this.edad = edad;
     }
 
-    saluda() {
+    saludar() {
         console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años`);
     }
 }
 
 const persona1 = new Persona("Carlos", 25);
-persona1.saluda(); // Hola, mi nombre es Carlos y tengo 25 años
+const persona2 = new Persona("NOé",41);
+persona1.saludar(); // Hola, mi nombre es Carlos y tengo 25 años
+persona2.saludar();
