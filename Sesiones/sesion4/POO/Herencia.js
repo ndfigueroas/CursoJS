@@ -1,6 +1,11 @@
 class Animal{
+
+    constructor(nombre){
+        this.nombre = nombre;
+    }
+
     hacerSonido(){
-        console.log("gua");
+        console.log("El animal hace un sonido");
     }
 }
 
@@ -10,4 +15,7 @@ class Perro extends Animal{
     }
 }
 
-const animal
+const animal = new Animal("Animal Doméstico");
+const perro = new Perro("Max")
+animal.hacerSonido();
+perro.hacerSonido();

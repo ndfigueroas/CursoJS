@@ -15,6 +15,17 @@ class Gato extends Animal {
 
     hacerSonido(){
         super.hacerSonido();
-        console.log
+        console.log("Miau");
+    }
+
+    detalles(){
+        console.log(`Este es un gato llamdo: ${this.nombre} de raza: ${this.raza}`);
     }
 }
+
+const animal =  new Animal("Animal");
+const gato = new Gato("Michi","Persa");
+
+animal.hacerSonido();
+gato.hacerSonido();
+gato.detalles();

@@ -1,3 +1,5 @@
+//GESTIÓN DE UN CARRITO DE COMPRAS
+
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
